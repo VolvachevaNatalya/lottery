@@ -10,8 +10,6 @@ class LotteryController extends Controller {
 
 
     public function start(Request $request){
-//            $value = uniqid();
-//            echo $value;
 
         return view('lottery');
     }

@@ -41,7 +41,7 @@ class Lottery extends Command
     {
         $numbers_array=$this->numbers(3,1,10);
         asort($numbers_array);
-        $numbers=123; //implode("",$numbers_array);
+        $numbers=implode("",$numbers_array);
         $time=time();
         $time_lottery=date('Y-m-d H:i:s', $time);
         $time_lottery_old=date('Y-m-d H:i:s', $time-3600);

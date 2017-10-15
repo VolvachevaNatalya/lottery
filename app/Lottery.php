@@ -20,10 +20,4 @@ class Lottery extends Model
         Session::flash('sm', 'Thank you! Your results are saved.');
     }
 
-
-    static public function getUserByEmail($request){
-        return count(DB::select("SELECT * FROM lotterys WHERE email = ?", [$request['email']]));
-
-    }
-
 }
